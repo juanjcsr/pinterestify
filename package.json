@@ -1,0 +1,33 @@
+{
+  "name": "pinterestify",
+  "version": "1.0.0",
+  "description": "Starter del proyecto de laboratoria",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack && node-sass ./scss -o ./css && exit 0",
+    "watch": "webpack --watch & node-sass --watch ./scss -o ./css",
+    "serve": "npm run watch & live-server"
+  },
+  "author": "Juan Carlos",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-latest": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "live-server": "^1.2.0",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.8",
+    "precss": "^2.0.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9"
+  }
+}
