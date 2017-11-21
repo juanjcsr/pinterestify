@@ -8,9 +8,12 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
+      { test: /\.js$/, 
+        include: /src/, 
+        loader: "babel-loader" },
       {
         test: /\.(scss)$/,
+        include: /scss/,
         use: [{
           loader: 'style-loader', // inject CSS to page
         }, {

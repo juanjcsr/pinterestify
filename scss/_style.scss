@@ -1,0 +1,81 @@
+
+$fondo: #F04949;
+$white: #fff;
+$dark_gray: #b5b5b5;
+$burgundy: #B7071B;
+
+//estilos menu
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+	position: fixed;
+	background-color: $white;
+	z-index: 1000;
+}
+.a-menu{
+	display: inline-block;
+	text-align: center !important;
+	padding: 10px 0;
+	width: 100%;
+	margin: 0;
+	border-bottom: 1px solid lightgray;
+	li{
+		display: inline-block;
+		font-size: 16px;
+		font-weight: 700;
+		padding: 0 5px;
+		i{
+			padding: 0;
+		}
+		a{
+			padding: 0;
+			color: $dark_gray;
+			text-decoration: none;
+		}
+		.red{
+			color: #BD081C;
+		}
+		.white{
+			color: #fff;
+		}
+		.white:hover{
+			color: #EFEFEF;
+		}
+	}
+}
+
+.sub-menu{
+	display: inline-block;
+	text-align: center !important;
+	padding: 10px 0;
+	width: 100%;
+	margin: 0;
+	.botones{
+		display: inline-block;
+		p{
+			background-color: rgba(150,110,75,0.8);
+			color: $white;
+			padding: 20px 25px;
+			font-weight: bold;
+			border-radius: 6px;
+		}
+		p.light{
+			background-color: rgba(194,149,110,0.5);
+			color: $white;
+			padding: 20px 25px;
+			font-weight: bold;
+			border-radius: 6px;
+		}
+	}
+	@for $i from 1 through 9{
+		.botones-#{$i}{
+			border-radius: 6px;
+			background-size:cover;
+			background-position: center;
+			margin: 0 5px;
+		}
+	}
+}
