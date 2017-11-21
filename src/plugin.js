@@ -26,7 +26,7 @@
         const $hashTag = $(`<span>${pin.hashtag}</span>`);
         const $author = $(`<p>${pin.user}</p>`);
 
-        const $modal = $(buildModal(pin.title, pin.user, pin.img_url, pin.description));
+        const $modal = $(buildModal(pin.title, pin.user, pin.image_url, pin.description));
 
         $('body').append($modal);
 
