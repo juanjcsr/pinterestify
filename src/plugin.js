@@ -23,6 +23,11 @@
           $modal.find("#imagenes").prop("src", pin.image_url);
           $modal.show();
         })
+        $modal.click(function(){
+          // console.log("imagen click");
+          $modal.find("#imagenes").prop("src", pin.image_url);
+          $modal.hide();
+        })
 
         console.log(pin.title);
         console.log(pin.description);
