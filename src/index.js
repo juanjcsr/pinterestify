@@ -5,5 +5,5 @@ import "./plugin"
 $(document).ready(function () {
 	$("#imagenes").pinterestify({
 		data: info
-	});
+	}).modalify();
 });
