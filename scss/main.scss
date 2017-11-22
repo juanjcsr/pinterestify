@@ -1,3 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 @import "_style.scss";
 
+.modal-estilo {
+  display: none;
+  position: fixed;
+  background: black;
+  top: 0;
+  /*left: */
+  width: 80%;
+  height: 100%;
+}
