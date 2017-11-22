@@ -19,7 +19,8 @@
       <div class="popup-inner"></div>
       </div>
       `;
-      const modalTitle = '<h2 class="modalTitle"></h2>';
+      const modalTitle = '<h2 class="modal-title"></h2>';
+      const modalImage = '<img src="" class="modal-image">'
       const textoCerrar = '<p><a data-popup-close="popup-1" href="#">Close</a></p>'
       const botonCerrar = '<a class="popup-close" data-popup-close="popup-1" href="#">x</a>'
 
