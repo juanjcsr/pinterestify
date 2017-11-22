@@ -2,7 +2,7 @@
 
     $.fn.pinterestify = function (options) {
       console.log( "plugin!!!", options);
-      const modal = $(`<div><img id="imageyoutube" src="" /></div>`)
+      const modal = $(`<div class="modal-estilo"><img id="imageyoutube" src=""  /></div>`)
       $('body').append(modal);
       modal.hide();
 
@@ -20,7 +20,8 @@
 
         img.click(function(){
           console.log("ya reconoce el click");
-
+          modal.find("#imageyoutube").prop("src", pin.image_url);
+          modal.show();
         })
       }
 
